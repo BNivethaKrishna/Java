@@ -1,0 +1,51 @@
+package com.index;
+import java.util.Scanner;
+
+public class Student {
+
+	public static void main(String[] args) {
+		Scanner scan=Scanner(System.in);
+		
+		System.out.println("Enter name:");
+		String name=scan.nextLine();
+		System.out.println("Name:" +name);
+		
+		System.out.println("Enter rollnumber:");
+		int rollnum=scan.nextInt();
+		System.out.println("Rollnum:" +rollnum);
+		
+		System.out.println("Enter subject1 mark:");
+		int sub1=scan.nextInt();
+		System.out.println("Subject1:" +sub1);
+		
+		System.out.println("Enter Subject2 mark:");
+		int sub2=scan.nextInt();
+		System.out.println("Subject2:" +sub2);
+		
+		System.out.println("Enter Subject3 mark:");
+		int sub3=scan.nextInt();
+		System.out.println("Subject3:" +sub3);
+		
+		System.out.println("ENter Subject4 mark:");
+		int sub4=scan.nextInt();
+		System.out.println("Subject4:" +sub4);
+		
+		System.out.println("Enter subject5 mark:");
+		int sub5=scan.nextInt();
+		System.out.println("Subject5:" +sub5);
+		
+		int a= (sub1+sub2+sub3+sub4+sub5)/5;
+		
+		System.out.println("Average of 5 Subjects:" +a);
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
