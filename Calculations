@@ -1,0 +1,32 @@
+package com.index;
+import java.util.*;
+
+public class Calculations {
+
+	public static void main(String[] args) {
+		
+	Scanner scan=new Scanner(System.in);
+	
+	System.out.println("Enter number1 : ");
+	int num1=scan.nextInt();
+	
+	System.out.println("Enter number2 : ");
+	int num2=scan.nextInt(); 
+	
+	int sum=num1+num2;
+	System.out.println("Sum = " +sum);
+	
+	int b = num1 - num2;
+	System.out.println("Difference=" +b);
+	
+	int c=num1*num2;
+	System.out.println("Multiplication:" +c);
+	
+	int d=num1/num2;
+	System.out.println("Division:" +d);
+	
+	int e=num1%num2;
+	System.out.println("Modulus:" +e);
+	}
+
+}
