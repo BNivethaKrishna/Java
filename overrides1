@@ -1,0 +1,45 @@
+// Base class Shape
+class Shape {
+    public double getPerimeter() {
+        System.out.println("Perimeter method in Shape class.");
+        return 0.0;
+    }
+
+    public double getArea() {
+        System.out.println("Area method in Shape class.");
+        return 0.0;
+    }
+}
+
+// Subclass Circle
+class Circle extends Shape {
+    private double radius;
+
+    // Constructor
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    // Override getPerimeter to compute circumference
+    @Override
+    public double getPerimeter() {
+        return 2 * Math.PI * radius;
+    }
+
+    // Override getArea to compute area
+    @Override
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+// Main class to test the program
+public class ShapeApp {
+    public static void main(String[] args) {
+        Circle circle = new Circle(5.0); // radius = 5.0
+
+        System.out.println("Circle with radius 5.0");
+        System.out.printf("Perimeter: %.2f\n", circle.getPerimeter());
+        System.out.printf("Area: %.2f\n", circle.getArea());
+    }
+}
